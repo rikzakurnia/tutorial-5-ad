@@ -42,6 +42,12 @@ dependencies {
 	testImplementation 'org.springframework.security:spring-security-test'
 }
 
+jar {
+	manifest {
+		attributes ('Main-Class': 'id.ac.ui.cs.advprog.tutorial5.Tutorial5Application')
+	}
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
